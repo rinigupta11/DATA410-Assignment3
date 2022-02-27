@@ -294,3 +294,18 @@ The Cross-validated Mean Absolute Error for XGB is : 2.9823656928920412
 
 ## Conclusion
 Extreme gradient boosting proved to the most effective method across both datasets and metrics. Furthermore, boosting lowess did not always improve performance. This trend might indicate that the performance of lowess may not be able to be improved. Random forest performed better on the Boston Housing dataset compared to cars. In conclusion, extreme gradient boosting produced markedly low mean-squared error values and mean-absolute error values. 
+
+### References
+
+Dobilas, S. (2022, February 5). XGBoost: Extreme gradient boosting - how to improve on regular gradient boosting? Medium. Retrieved February 27, 2022, from https://towardsdatascience.com/xgboost-extreme-gradient-boosting-how-to-improve-on-regular-gradient-boosting-5c6acf66c70a 
+
+Friedman, J. H. (2001). Greedy Function Approximation: A Gradient Boosting Machine. The Annals of Statistics, 29(5), 1189–1232. http://www.jstor.org/stable/2699986
+
+Maklin, C. (2020, May 9). XGBoost Python example. Medium. Retrieved February 27, 2022, from https://towardsdatascience.com/xgboost-python-example-42777d01001e 
+
+Multivariate Regression. OARC Stats. (n.d.). Retrieved February 27, 2022, from https://stats.oarc.ucla.edu/stata/dae/multivariate-regression-analysis/ 
+
+Sheridan, R. (n.d.). Extreme Gradient Boosting as a Method for Quantitative Structure Activity Relationships. https://doi.org/10.1021/acs.jcim.6b00591.s011 
+
+Singh, H. (2018, November 4). Understanding gradient boosting machines. Medium. Retrieved February 27, 2022, from https://towardsdatascience.com/understanding-gradient-boosting-machines-9be756fe76ab 
+
