@@ -1,7 +1,12 @@
 # Gradient Boosting on Multivariate Regression Methods 
 ### Rini Gupta
 
-I will be evaluating the efficacy of gradient boosting and extreme gradient boosting in comparison to locally weighted linear regression and random forest regression on its own. To do this, I will use the Boston Housing dataset and the cars dataset to compare the performance on two distinct experiments. As the name suggests, multivariate regression includes multiple input features that are used to predict the response variable, y. I will utilize cross-validation techniques to compare the mean squared errors and mean absolute errors of locally weighted linear regression, random forest regression, boosted locally weighted regression, and extreme gradient boosting. In simple terms, boosting takes weak learners and makes them into strong learners (Singh 2018). The trees that are fit are on a modified version of the original data. Gradient boosting is a greedy algorithm that gradually trains many models. Friedman's extreme gradient boosting was developed in 2001 with regularization mechanisms to avoid overfitting (Maklin 2020). Like gradient boosting, extreme gradient boosting is a tree-based algorithm. 
+I will be evaluating the efficacy of gradient boosting and extreme gradient boosting in comparison to locally weighted linear regression and random forest regression on its own. To do this, I will use the Boston Housing dataset and the cars dataset to compare the performance on two distinct experiments. As the name suggests, multivariate regression includes multiple input features that are used to predict the response variable, y. I will utilize cross-validation techniques to compare the mean squared errors and mean absolute errors of locally weighted linear regression, random forest regression, boosted locally weighted regression, and extreme gradient boosting. 
+
+In simple terms, boosting takes weak learners and makes them into strong learners (Singh 2018). The trees that are fit are on a modified version of the original data. Gradient boosting is a greedy algorithm that gradually trains many models. Friedman's extreme gradient boosting was developed in 2001 with regularization mechanisms to avoid overfitting (Maklin 2020). Like gradient boosting, extreme gradient boosting is a tree-based algorithm. One of the main strengths of extreme gradient boosting is the speed at which it runs, particularly in comparison to a deep neural network. Extreme gradient boosting is also referred to as XGBoost. XGBoost is theorized to outperform random forest regression. This theory will be examined in later sections of this paper. 
+
+![image](https://user-images.githubusercontent.com/76021844/155905225-1096a2cb-3d04-4a06-ae16-e25534d482c9.png)
+
 
 ### Loading in the Data/Import Necessary Libraries 
 ```
@@ -293,7 +298,7 @@ The Cross-validated Mean Absolute Error for XGB is : 2.9823656928920412
 
 
 ## Conclusion
-Extreme gradient boosting proved to the most effective method across both datasets and metrics. Furthermore, boosting lowess did not always improve performance. This trend might indicate that the performance of lowess may not be able to be improved. Random forest performed better on the Boston Housing dataset compared to cars. In conclusion, extreme gradient boosting produced markedly low mean-squared error values and mean-absolute error values. 
+Extreme gradient boosting proved to the most effective method across both datasets and metrics. Furthermore, boosting lowess did not always improve performance. This trend might indicate that the performance of lowess may not be able to be improved. Random forest performed better on the Boston Housing dataset compared to cars. In conclusion, extreme gradient boosting produced markedly low mean-squared error values and mean-absolute error values, even compared to the random forest regressor. Extreme gradient boosting has the added benefit of runtime speed, which makes it an excellent choice to improve the performance of a regression method.  
 
 ### References
 
@@ -304,6 +309,8 @@ Friedman, J. H. (2001). Greedy Function Approximation: A Gradient Boosting Machi
 Maklin, C. (2020, May 9). XGBoost Python example. Medium. Retrieved February 27, 2022, from https://towardsdatascience.com/xgboost-python-example-42777d01001e 
 
 Multivariate Regression. OARC Stats. (n.d.). Retrieved February 27, 2022, from https://stats.oarc.ucla.edu/stata/dae/multivariate-regression-analysis/ 
+
+Saxena, S. (2021, March 25). Gradient boosting machine: Gradient boosting machine for data science. Analytics Vidhya. Retrieved February 27, 2022, from https://www.analyticsvidhya.com/blog/2021/03/gradient-boosting-machine-for-data-scientists/ 
 
 Sheridan, R. (n.d.). Extreme Gradient Boosting as a Method for Quantitative Structure Activity Relationships. https://doi.org/10.1021/acs.jcim.6b00591.s011 
 
